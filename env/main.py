@@ -94,11 +94,6 @@ def bookings():
         db.session.add(booking)
         db.session.commit()
         return redirect(url_for('bookings'))
-
-
-
-
-
 with app.app_context():
     db.create_all()
 
